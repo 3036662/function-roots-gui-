@@ -381,7 +381,7 @@ void Graph_box::Displ_calc(double eps) {
 		}
 		// округлим до нужного числа знаков 
 		x = round(x/eps)*eps;
-		snprintf(buffer, sizeof(buffer), "x = %.10f\n", i, x);
+		snprintf(buffer, sizeof(buffer), "x = %.10f\n",  x);
 		displ->insert(buffer);
 		snprintf(buffer, sizeof(buffer), "f(x) = %.10f\n", func(x));
 		displ->insert(buffer);
